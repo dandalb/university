@@ -38,7 +38,7 @@ public class DailyScheduleController {
                 dailyScheduleMapper.mapToModel(dailyScheduleRequestDto)));
     }
 
-    @GetMapping
+    @GetMapping("/by-student")
     public List<DailyScheduleResponseDto> getByStudent(@RequestParam Long studentId,
                                                        @RequestParam DayOfWeek day) {
         return studentService.get(studentId).getGroup().getDailySchedules()
