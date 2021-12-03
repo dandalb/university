@@ -11,5 +11,5 @@ public class StudentRequestDto {
     @NotNull
     private String lastName;
     @Positive
-    private Long groupId;//UUID
+    private Long groupId;
 }
